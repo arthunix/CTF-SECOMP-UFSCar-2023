@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Content-type: text/html";
+echo ""
+
+/bin/cat << EOM
+<pre>
+EOM
+
+echo `date`
+echo `uptime`
+
+/bin/cat << EOM
+</pre>
+EOM

@@ -1,0 +1,74 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.1)
+
+2023-11-24 15:43:27.760  INFO 1 --- [           main] f.c.l.v.Application                      : Starting Application using Java 1.8.0_181 on 27f03beb3624 with PID 1 (/app/spring-boot-application.jar started by root in /)
+2023-11-24 15:43:27.780  INFO 1 --- [           main] f.c.l.v.Application                      : No active profile set, falling back to default profiles: default
+2023-11-24 15:43:30.078  INFO 1 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-11-24 15:43:30.115  INFO 1 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]                                             
+2023-11-24 15:43:30.116  INFO 1 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.55]                       
+2023-11-24 15:43:30.218  INFO 1 --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext                    
+2023-11-24 15:43:30.218  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2257 ms       
+2023-11-24 15:43:31.187  INFO 1 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''           
+2023-11-24 15:43:31.209  INFO 1 --- [           main] f.c.l.v.Application                      : Started Application in 4.522 seconds (JVM running for 6.202)          
+2023-11-24 15:44:50.409  INFO 1 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'             
+2023-11-24 15:44:50.410  INFO 1 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'                              
+2023-11-24 15:44:50.411  INFO 1 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms                                      
+2023-11-24 15:44:50.475  WARN 1 --- [nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]                                                                               
+2023-11-24 15:44:51.956  WARN 1 --- [nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]                                                                               
+2023-11-24 15:44:51.975  WARN 1 --- [nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' not supported]
+2023-11-24 15:44:51.975  WARN 1 --- [nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:44:51.977  WARN 1 --- [nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:44:51.979  WARN 1 --- [io-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' not supported]
+2023-11-24 15:44:51.982  WARN 1 --- [nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-24 15:44:52.014  WARN 1 --- [nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'AEUD' not supported]
+2023-11-24 15:44:52.016  WARN 1 --- [nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' not supported]
+2023-11-24 15:44:52.021  WARN 1 --- [nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:44:52.043  WARN 1 --- [nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-24 15:44:52.159  WARN 1 --- [nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:44:52.167  WARN 1 --- [io-8080-exec-11] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:50:01.257  WARN 1 --- [nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:50:02.604  WARN 1 --- [nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:50:02.609  WARN 1 --- [io-8080-exec-12] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' not supported]
+2023-11-24 15:50:02.613  WARN 1 --- [nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' not supported]
+2023-11-24 15:50:02.614  WARN 1 --- [io-8080-exec-11] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:50:02.616  WARN 1 --- [nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-24 15:50:02.616  WARN 1 --- [nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:50:02.643  WARN 1 --- [nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'QCOM' not supported]
+2023-11-24 15:50:02.644  WARN 1 --- [nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:50:02.643  WARN 1 --- [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' not supported]
+2023-11-24 15:50:02.671  WARN 1 --- [io-8080-exec-11] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-24 15:50:02.731  WARN 1 --- [nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:50:02.739  WARN 1 --- [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:52:39.446  WARN 1 --- [nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:52:40.806  WARN 1 --- [io-8080-exec-16] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:52:40.816  WARN 1 --- [io-8080-exec-15] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-24 15:52:40.822  WARN 1 --- [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:52:40.825  WARN 1 --- [nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' not supported]
+2023-11-24 15:52:40.825  WARN 1 --- [nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:52:40.830  WARN 1 --- [nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' not supported]
+2023-11-24 15:52:40.851  WARN 1 --- [io-8080-exec-12] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:52:40.853  WARN 1 --- [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' not supported]
+2023-11-24 15:52:40.851  WARN 1 --- [nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GVVR' not supported]
+2023-11-24 15:52:40.871  WARN 1 --- [nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-11-24 15:52:40.929  WARN 1 --- [nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:52:40.937  WARN 1 --- [nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'X-Api-Version' for method parameter type String is not present]
+2023-11-24 15:56:30.880  INFO 1 --- [nio-8080-exec-1] o.a.c.h.Http11Processor                  : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x160xf8_K0xbaQ9D0xee0xdfK0xf49D0xe00xdc0xab0xca0xce0xdd0xa7q))_0xca,0xb90x02i0x160xd0 ]. HTTP method names must be tokens
+        at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419) ~[tomcat-embed-core-9.0.55.jar!/:?]
+        at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:269) [tomcat-embed-core-9.0.55.jar!/:?]
+        at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.55.jar!/:?]
+        at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) [tomcat-embed-core-9.0.55.jar!/:?]
+        at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) [tomcat-embed-core-9.0.55.jar!/:?]
+        at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.55.jar!/:?]
+        at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.55.jar!/:?]
+        at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.55.jar!/:?]
+        at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.55.jar!/:?]
+        at java.lang.Thread.run(Thread.java:748) [?:1.8.0_181]

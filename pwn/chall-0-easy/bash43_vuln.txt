@@ -1,0 +1,528 @@
+[95mTesting ./bash-4.3-001/bash ...
+Bash version 4.3.1(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-002/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-003/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-004/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-005/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-006/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-007/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-008/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-009/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-010/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-011/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-012/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-013/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-014/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-015/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-016/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-017/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-018/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-019/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-020/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-021/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-022/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-023/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-024/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-025/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[92mNot vulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-026/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting /usr/bin/bash ...
+Bash version 5.2.15(1)-release
+[39m
+[92mVariable function parser pre/suffixed [%%, upstream], bugs not exploitable[39m
+[92mNot vulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[92mNot vulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[92mNot vulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-028/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-029/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[92mNot vulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-030/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[92mNot vulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-031/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-032/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-033/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-034/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-035/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-036/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-037/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-038/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-039/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-040/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-041/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-042/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-043/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-044/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-045/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-046/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-047/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+[95mTesting ./bash-4.3-048/bash ...
+Bash version 4.3.0(1)-release
+[39m
+[91mVariable function parser active, maybe vulnerable to unknown parser bugs[39m
+[91mVulnerable to CVE-2014-6271 (original shellshock)[39m
+[92mNot vulnerable to CVE-2014-7169 (taviso bug)[39m
+[92mNot vulnerable to CVE-2014-7186 (redir_stack bug)[39m
+[96mTest for CVE-2014-7187 not reliable without address sanitizer[39m
+[91mVulnerable to CVE-2014-6277 (lcamtuf bug #1)[39m
+[91mVulnerable to CVE-2014-6278 (lcamtuf bug #2)[39m
+testing bash with patch version: 1
+testing bash with patch version: 2
+testing bash with patch version: 3
+testing bash with patch version: 4
+testing bash with patch version: 5
+testing bash with patch version: 6
+testing bash with patch version: 7
+testing bash with patch version: 8
+testing bash with patch version: 9
+testing bash with patch version: 10
+testing bash with patch version: 11
+testing bash with patch version: 12
+testing bash with patch version: 13
+testing bash with patch version: 14
+testing bash with patch version: 15
+testing bash with patch version: 16
+testing bash with patch version: 17
+testing bash with patch version: 18
+testing bash with patch version: 19
+testing bash with patch version: 20
+testing bash with patch version: 21
+testing bash with patch version: 22
+testing bash with patch version: 23
+testing bash with patch version: 24
+testing bash with patch version: 25
+testing bash with patch version: 26
+testing bash with patch version: 27
+testing bash with patch version: 28
+testing bash with patch version: 29
+testing bash with patch version: 30
+testing bash with patch version: 31
+testing bash with patch version: 32
+testing bash with patch version: 33
+testing bash with patch version: 34
+testing bash with patch version: 35
+testing bash with patch version: 36
+testing bash with patch version: 37
+testing bash with patch version: 38
+testing bash with patch version: 39
+testing bash with patch version: 40
+testing bash with patch version: 41
+testing bash with patch version: 42
+testing bash with patch version: 43
+testing bash with patch version: 44
+testing bash with patch version: 45
+testing bash with patch version: 46
+testing bash with patch version: 47
+testing bash with patch version: 48
