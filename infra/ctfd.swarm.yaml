@@ -1,0 +1,84 @@
+version: "3.2"
+
+services:
+  app:
+    image: ctfd/ctfd
+    networks:
+      - traefik-public
+      - ctfd-net
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ctfd_files:/var/uploads
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.app.rule=Host(`ctf.secompufscar.com.br`)"
+        - "traefik.http.services.app.loadbalancer.server.port=8000"
+        - "traefik.http.routers.app.entrypoints=websecure"
+        - "traefik.http.routers.app.tls=true"
+        - "traefik.http.routers.app.tls.certresolver=leresolver"
+        - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+        - "traefik.http.routers.redirs.rule=hostregexp(`{host:.+}`)"
+        - "traefik.http.routers.redirs.entrypoints=web"
+        - "traefik.http.routers.redirs.middlewares=redirect-to-https"
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+      # resources:
+      #   limits:
+      #     cpus: "1"
+      #     memory: 500M
+    environment:
+      DATABASE_URL: mysql+pymysql://ctfd:ctfd@db/ctfd
+      REDIS_URL: redis://cache:6379
+      UPLOAD_FOLDER: /var/uploads
+      REVERSE_PROXY: "True"
+
+  db:
+    image: mariadb:10.4.12
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=ctfd
+      - MYSQL_USER=ctfd
+      - MYSQL_PASSWORD=ctfd
+      - MYSQL_DATABASE=ctfd
+    volumes:
+      - mysql_data:/var/lib/mysql
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    networks:
+      - ctfd-net
+    # This command is required to set important mariadb defaults
+    command:
+      [
+        mysqld,
+        --character-set-server=utf8mb4,
+        --collation-server=utf8mb4_unicode_ci,
+        --wait_timeout=28800,
+        --log-warnings=0,
+      ]
+
+  cache:
+    image: redis:4
+    restart: always
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    volumes:
+      - redis_data:/data
+    networks:
+      - ctfd-net
+
+networks:
+  traefik-public:
+    driver: overlay
+    external: true
+  ctfd-net:
+    driver: overlay
+
+volumes:
+  ctfd_files:
+  mysql_data:
+  redis_data:

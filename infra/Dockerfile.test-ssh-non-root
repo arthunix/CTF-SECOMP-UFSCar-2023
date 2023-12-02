@@ -1,0 +1,37 @@
+FROM ubuntu:latest
+
+RUN apt-get update
+
+RUN apt-get install -y openssh-server
+RUN mkdir /var/run/sshd
+
+# RUN echo 'root:root' |chpasswd
+# RUN echo 'root:secomp' |chpasswd
+
+# RUN sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+# RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
+
+RUN useradd -rm -d /home/secomp -s /bin/bash -u 1000 secomp
+# RUN echo 'root:root' | chpasswd
+RUN echo 'secomp:secomp' | chpasswd
+
+RUN apt-get autoremove && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN echo "MaxAuthTries 25" >> /etc/ssh/sshd_config
+RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+
+RUN mkdir /root/.ssh
+
+RUN apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+
+# CMD ["sleep", "60"]
+# CMD ["/usr/sbin/sshd", "-D"]
+# CMD ["/bin/bash", "-c", "/sbin/init && sleep 60"]
+CMD ["/bin/bash", "-c", "/usr/sbin/sshd && sleep 3600 && exit"]
+
+# docker build -t ssh-test-non-root . -f Dockerfile.ssh-test-non-root
+# docker tag ssh-test-non-root:latest registry.ctf.secompufscar.com.br/ssh-test-non-root:latest
+# docker push registry.ctf.secompufscar.com.br/ssh-test-non-root:latest
