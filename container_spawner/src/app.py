@@ -139,7 +139,7 @@ def process():
         #     compose_file_name,
         #     container_id,
         # ]
-        ["docker", "compose", "-f", compose_file_name, "-p", "chall", "up", "-d"]
+        ["docker", "compose", "-f", compose_file_name, "-p", "ssh-challs", "up", "-d"]
     )
 
     container_spawn_process.wait()
