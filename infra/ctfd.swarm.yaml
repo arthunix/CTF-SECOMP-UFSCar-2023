@@ -7,7 +7,6 @@ services:
       - traefik-public
       - ctfd-net
     volumes:
-      - /etc/localtime:/etc/localtime
       - ctfd_files:/var/uploads
     deploy:
       labels:
@@ -30,6 +29,7 @@ services:
       #     cpus: "1"
       #     memory: 500M
     environment:
+      TZ: America/Sao_Paulo
       DATABASE_URL: mysql+pymysql://ctfd:ctfd@db/ctfd
       REDIS_URL: redis://cache:6379
       UPLOAD_FOLDER: /var/uploads
