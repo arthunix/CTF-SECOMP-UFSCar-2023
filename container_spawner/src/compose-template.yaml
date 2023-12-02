@@ -1,0 +1,18 @@
+# docker run -v /var/run/docker.sock:/var/run/docker.sock --privileged -it docker:dind sh
+version: "3.8"
+services:
+  {}:
+    # image: registry.ctf.secompufscar.com.br/my-image:latest
+    container_name: "{}"
+    image: registry.ctf.secompufscar.com.br/{}:latest # this is the tgt image
+    command: sh -c "/usr/sbin/sshd && sleep {} && exit" # container timout
+    ports:
+      - "{}:22"
+    restart: "no"
+    deploy:
+      restart_policy:
+        condition: none
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 100M

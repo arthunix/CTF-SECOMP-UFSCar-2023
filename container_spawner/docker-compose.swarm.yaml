@@ -1,0 +1,52 @@
+version: "3.2"
+
+services:
+  chall-spawner:
+    image: registry.ctf.secompufscar.com.br/container-spawner:latest
+    networks:
+      - traefik-public
+      - chall-spawner-net
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    privileged: true
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        # change the host here
+        - "traefik.http.routers.chall.rule=Host(`chall.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.chall.loadbalancer.server.port=8080"
+        - "traefik.http.routers.chall.entrypoints=websecure"
+        - "traefik.http.routers.chall.tls=true"
+        - "traefik.http.routers.chall.tls.certresolver=leresolver"
+      mode: global
+      placement:
+        constraints:
+          - node.role == worker
+    environment:
+      - TZ=America/Sao_Paulo
+      - CONTAINER_QUOTA_PER_IP=5
+      - CHALLS=ssh-test # comma separated list of image names to enable ssh acces
+      - DEBUG=1
+    secrets:
+      - REDIS_HOST
+      - REDIS_PORT
+      - REDIS_PASSWD
+      - REGISTRY_USER
+      - REGISTRY_PASS
+
+secrets:
+  REDIS_HOST:
+    external: true
+  REDIS_PORT:
+    external: true
+  REDIS_PASSWD:
+    external: true
+  REGISTRY_USER:
+    external: true
+  REGISTRY_PASS:
+    external: true
+
+networks:
+  chall-spawner-net:
+  traefik-public:
+    external: true

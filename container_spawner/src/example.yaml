@@ -1,0 +1,19 @@
+# Username: root
+# Password: Passw0rd
+
+version: "3.8"
+services:
+  uuid-ssh-test:
+    image: docker.io/mmumshad/ubuntu-ssh-enabled:latest # this is the tgt image
+    container_name: my-ssh-test-with-uuid
+    command: sh -c "/usr/sbin/sshd && sleep {} && exit" # container timout
+    ports:
+      - 65535:22
+    deploy:
+      restart_policy:
+        condition: none
+      resources:
+        limits:
+          cpus: "0.05"
+          memory: 350M
+# docker run --stop-timeout 300 my_image
