@@ -1,0 +1,113 @@
+version: "3.2"
+
+services:
+  app-sql:
+    image: registry.ctf.secompufscar.com.br/sql-injection:latest
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.app-sql.rule=Host(`oops-i-lost-my-key.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.app-sql.loadbalancer.server.port=5000"
+        - "traefik.http.routers.app-sql.entrypoints=websecure"
+        - "traefik.http.routers.app-sql.tls=true"
+        - "traefik.http.routers.app-sql.tls.certresolver=leresolver"
+    networks:
+      - traefik-public
+
+  app-php:
+    image: registry.ctf.secompufscar.com.br/certificate-web-chall:latest
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.app-php.rule=Host(`certificate.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.app-php.loadbalancer.server.port=7000"
+        - "traefik.http.routers.app-php.entrypoints=websecure"
+        - "traefik.http.routers.app-php.tls=true"
+        - "traefik.http.routers.app-php.tls.certresolver=leresolver"
+    networks:
+      - traefik-public
+
+  app-nosql:
+    depends_on:
+      - db
+    image: registry.ctf.secompufscar.com.br/nosql-injection:latest
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.app-nosql.rule=Host(`my-secure-api.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.app-nosql.loadbalancer.server.port=5000"
+        - "traefik.http.routers.app-nosql.entrypoints=websecure"
+        - "traefik.http.routers.app-nosql.tls=true"
+        - "traefik.http.routers.app-nosql.tls.certresolver=leresolver"
+    networks:
+      - app-nosql
+      - traefik-public
+
+  web:
+    depends_on:
+      - db
+    # image: wordpress:5.6.2
+    image: registry.ctf.secompufscar.com.br/wordpress-rev-shell:latest
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.web.rule=Host(`web.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.web.loadbalancer.server.port=80"
+        - "traefik.http.routers.web.entrypoints=websecure"
+        - "traefik.http.routers.web.tls=true"
+        - "traefik.http.routers.web.tls.certresolver=leresolver"
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: 400M
+    environment:
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+      - WORDPRESS_DB_NAME=wordpress
+    networks:
+      - wpsite
+      - traefik-public
+
+  # dependencies
+  mongodb:
+    image: mongo:latest
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - app-nosql
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+
+  db:
+    # We use a mariadb image which supports both amd64 & arm64 architecture
+    # image: mariadb:10.6.4-focal
+    # If you really want to use MySQL, uncomment the following line
+    image: mysql:latest
+    command: "--default-authentication-plugin=mysql_native_password"
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=somewordpress
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wordpress
+    networks:
+      - wpsite
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+
+volumes:
+  mongodb_data:
+
+networks:
+  traefik-public:
+    external: true
+
+  app-nosql:
+    driver: overlay

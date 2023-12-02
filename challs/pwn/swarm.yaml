@@ -1,0 +1,38 @@
+version: "3.2"
+
+services:
+  rce:
+    image: registry.ctf.secompufscar.com.br/i-am-logging-your-pc-now:latest
+    networks:
+      - traefik-public
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.rce.rule=Host(`i-am-logging-your-pc-now.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.rce.loadbalancer.server.port=8080"
+        - "traefik.http.routers.rce.entrypoints=websecure"
+        - "traefik.http.routers.rce.tls=true"
+        - "traefik.http.routers.rce.tls.certresolver=leresolver"
+      replicas: 1
+    environment:
+      - TZ=America/Sao_Paulo
+
+  shellshock:
+    image: registry.ctf.secompufscar.com.br/i-forgot-to-patch-my-system:latest
+    networks:
+      - traefik-public
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.shellshock-chall.rule=Host(`i-forgot-to-patch-my-system.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.shellshock-chall.loadbalancer.server.port=80"
+        - "traefik.http.routers.shellshock-chall.entrypoints=websecure"
+        - "traefik.http.routers.shellshock-chall.tls=true"
+        - "traefik.http.routers.shellshock-chall.tls.certresolver=leresolver"
+      replicas: 1
+    environment:
+      - TZ=America/Sao_Paulo
+
+networks:
+  traefik-public:
+    external: true
