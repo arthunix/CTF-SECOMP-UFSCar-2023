@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <title>README</title>
+  </head>
+  <body>
+    <h1 id="my-secure-mongodb-api">My Secure MongoDB API</h1>
+    <hr />
+    <p><code>/login</code>:</p>
+    <ul>
+      <li>methods: POST</li>
+      <li>
+        returns:
+        <code
+          >{&quot;authorization-token&quot;:
+          &quot;ABC-TOKEN-1H-EXPIRATION&quot;}</code
+        >
+      </li>
+      <li>headers: <code>&#39;Content-Type: application/json&#39;</code></li>
+      <li>payload:</li>
+    </ul>
+    <pre><code class='language-json' lang='json'>{
+  &quot;username&quot;: &quot;John Doe&quot;,
+  &quot;password&quot;: &quot;my difficult pass&quot;
+}
+</code></pre>
+    <hr />
+    <p><code>/get-info</code>:</p>
+    <ul>
+      <li>methods: GET</li>
+      <li>returns: <code>{&quot;userData&quot;: $USER_INFO}</code></li>
+      <li>header:</li>
+    </ul>
+    <pre><code class='language-json' lang='json'>{
+  &quot;authorization-token&quot;: &quot;ABC-TOKEN-1H-EXPIRATION&quot;
+}
+</code></pre>
+  </body>
+</html>
