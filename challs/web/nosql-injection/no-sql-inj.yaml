@@ -1,0 +1,40 @@
+version: "3.2"
+
+services:
+  mongodb:
+    image: mongo:latest
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - app-nosql
+    deploy:
+      placement:
+        constraints:
+          - node.role == manager
+
+  app-nosql:
+    depends_on:
+      - db
+    image: registry.ctf.secompufscar.com.br/nosql-injection:latest
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        # change the host here
+        - "traefik.http.routers.app-nosql.rule=Host(`my-secure-api.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.app-nosql.loadbalancer.server.port=5000"
+        - "traefik.http.routers.app-nosql.entrypoints=websecure"
+        - "traefik.http.routers.app-nosql.tls=true"
+        - "traefik.http.routers.app-nosql.tls.certresolver=leresolver"
+    networks:
+      - app-nosql
+      - traefik-public
+
+volumes:
+  mongodb_data:
+
+networks:
+  app-nosql:
+    driver: overlay
+
+  traefik-public:
+    external: true

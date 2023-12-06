@@ -1,0 +1,21 @@
+version: "3.2"
+
+services:
+
+  app-php:
+    image: registry.ctf.secompufscar.com.br/certificate-web-chall:latest
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        # change the host here
+        - "traefik.http.routers.app-php.rule=Host(`certificate.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.app-php.loadbalancer.server.port=7000"
+        - "traefik.http.routers.app-php.entrypoints=websecure"
+        - "traefik.http.routers.app-php.tls=true"
+        - "traefik.http.routers.app-php.tls.certresolver=leresolver"
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true

@@ -1,0 +1,20 @@
+version: "3.2"
+
+services:
+  app-sql:
+    image: registry.ctf.secompufscar.com.br/sql-injection:latest
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        # change the host here
+        - "traefik.http.routers.app-sql.rule=Host(`oops-i-lost-my-key.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.app-sql.loadbalancer.server.port=5000"
+        - "traefik.http.routers.app-sql.entrypoints=websecure"
+        - "traefik.http.routers.app-sql.tls=true"
+        - "traefik.http.routers.app-sql.tls.certresolver=leresolver"
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true
