@@ -62,7 +62,7 @@ docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 
 ### crypto
 
-- chall 1:
-- chall 2:
+- chall 1: gotta go fast
+- chall 2: hash-stuffing
 
 ![top10](https://github.com/arthunix/CTF-SECOMP-UFSCar-2023/assets/109439838/a793ed19-c080-4259-abdd-02934fb42fb8)
