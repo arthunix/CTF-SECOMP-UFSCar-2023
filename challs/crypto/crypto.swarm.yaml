@@ -1,0 +1,34 @@
+version: "3.2"
+
+services:
+  gotta-go-fast:
+    image: registry.ctf.secompufscar.com.br/gotta-go-fast:latest
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        # change the host here
+        - "traefik.http.routers.gotta-go-fast.rule=Host(`gotta-go-fast.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.gotta-go-fast.loadbalancer.server.port=13372"
+        - "traefik.http.routers.gotta-go-fast.entrypoints=websecure"
+        - "traefik.http.routers.gotta-go-fast.tls=true"
+        - "traefik.http.routers.gotta-go-fast.tls.certresolver=leresolver"
+    networks:
+      - traefik-public
+
+  hash-stuffing:
+    image: registry.ctf.secompufscar.com.br/hash-stuffing:latest
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        # change the host here
+        - "traefik.http.routers.hash-stuffing.rule=Host(`hash-stuffing.ctf.secompufscar.com.br`)"
+        - "traefik.http.services.hash-stuffing.loadbalancer.server.port=13372"
+        - "traefik.http.routers.hash-stuffing.entrypoints=websecure"
+        - "traefik.http.routers.hash-stuffing.tls=true"
+        - "traefik.http.routers.hash-stuffing.tls.certresolver=leresolver"
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true
