@@ -32,13 +32,6 @@ docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 
 ## Challs
 
-### reversing
-
-- chall 1:
-- chall 2:
-- chall 3:
-- chall 4:
-
 ### pwning
 
 - chall 1: bash shellshock (CVE-2014-6271) [I Forgot to Update My Server]
@@ -48,21 +41,22 @@ docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 
 - chall 5: docker priv-esc (deprecated) [Ain't root, kkkrying]
 
-### forense
-
-- chall 1:
-- chall 2:
-
-### web
+### reversing / forense
 
 - chall 1:
 - chall 2:
 - chall 3:
-- chall 4:
+
+### web
+
+- chall 1: Certificate
+- chall 2: NoSQL Injection
+- chall 3: SQL Injection
+- chall 4: WordPress
 
 ### crypto
 
-- chall 1: gotta go fast
-- chall 2: hash-stuffing
+- chall 1: Gotta Go Fast
+- chall 2: Hash Stuffing
 
 ![top10](https://github.com/arthunix/CTF-SECOMP-UFSCar-2023/assets/109439838/a793ed19-c080-4259-abdd-02934fb42fb8)
